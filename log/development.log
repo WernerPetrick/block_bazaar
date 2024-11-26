@@ -1,0 +1,46 @@
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='BlockBazaar'*/[0m
+  [1m[35m (213.5ms)[0m  [1m[35mCREATE DATABASE "block_bazaar_development" ENCODING = 'unicode' /*application='BlockBazaar'*/[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='BlockBazaar'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='BlockBazaar'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7008405182539592685) /*application='BlockBazaar'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='BlockBazaar'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-11-26 07:20:53.202064', '2024-11-26 07:20:53.202066') RETURNING "key" /*application='BlockBazaar'*/[0m
+Migrating to CreateUsers (20241126071847)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='BlockBazaar'*/[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='BlockBazaar'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email") /*application='BlockBazaar'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241126071847') RETURNING "version" /*application='BlockBazaar'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*application='BlockBazaar'*/[0m
+Migrating to CreateOrganizations (20241126071854)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='BlockBazaar'*/[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "organizations" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='BlockBazaar'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241126071854') RETURNING "version" /*application='BlockBazaar'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*application='BlockBazaar'*/[0m
+Migrating to CreateMemberships (20241126071904)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='BlockBazaar'*/[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "memberships" ("id" bigserial primary key, "user_id" bigint NOT NULL, "organization_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_99326fb65d"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_64267aab58"
+FOREIGN KEY ("organization_id")
+  REFERENCES "organizations" ("id")
+) /*application='BlockBazaar'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_memberships_on_user_id" ON "memberships" ("user_id") /*application='BlockBazaar'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_memberships_on_organization_id" ON "memberships" ("organization_id") /*application='BlockBazaar'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241126071904') RETURNING "version" /*application='BlockBazaar'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='BlockBazaar'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7008405182539592685) /*application='BlockBazaar'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+Started GET "/" for 127.0.0.1 at 2024-11-26 09:29:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/wernerpetrick/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/wernerpetrick/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 6.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.3ms)
+
+
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='BlockBazaar'*/[0m
+  [1m[35m (22.8ms)[0m  [1m[35mCREATE DATABASE "block_bazaar_development" ENCODING = 'unicode' /*application='BlockBazaar'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='BlockBazaar'*/[0m
+  [1m[35m (112.9ms)[0m  [1m[35mCREATE DATABASE "block_bazaar_test" ENCODING = 'unicode' /*application='BlockBazaar'*/[0m
