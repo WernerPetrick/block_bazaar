@@ -1,0 +1,7 @@
+en:
+  users:
+    new:
+      title: Sign up to Block Bazaar
+      sign_up: Sign up!
+    create:
+      welcome: "Welcome to Local Bazaar, %{name}"

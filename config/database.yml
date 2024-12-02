@@ -23,6 +23,8 @@ default: &default
 development:
   <<: *default
   database: block_bazaar_development
+  username: postgres
+  password: options_ALLOW
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -57,6 +59,8 @@ development:
 test:
   <<: *default
   database: block_bazaar_test
+  username: postgres
+  password: options_ALLOW
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
