@@ -2,13 +2,13 @@ class User < ApplicationRecord
   
   before_validation :strip_extra_spaces
   
-  validates :name, presence :true
+  validates :name, presence: true
   validates :email,
-    format: {with URI::MailTo::EMAIL_REGEXP},
-    uniqueness: {case_sensitive: false}
+            format: { with: URI::MailTo::EMAIL_REGEXP },
+            uniqueness: {case_sensitive: false}
   validates :password,
-    presence :true,
-    length: {minimum: 8}
+            presence: true,
+            length: {minimum: 8}
   has_secure_password
   
     

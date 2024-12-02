@@ -44,3 +44,773 @@ Completed 200 OK in 58ms (Views: 6.3ms | ActiveRecord: 0.0ms (0 queries, 0 cache
   [1m[35m (22.8ms)[0m  [1m[35mCREATE DATABASE "block_bazaar_development" ENCODING = 'unicode' /*application='BlockBazaar'*/[0m
   [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='BlockBazaar'*/[0m
   [1m[35m (112.9ms)[0m  [1m[35mCREATE DATABASE "block_bazaar_test" ENCODING = 'unicode' /*application='BlockBazaar'*/[0m
+Started GET "/" for 127.0.0.1 at 2024-11-26 10:06:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/wernerpetrick/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/wernerpetrick/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 63ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-26 10:06:44 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/wernerpetrick/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/wernerpetrick/.rbenv/versions/3.3.4/lib/ruby/gems/3.3.0/gems/railties-8.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | GC: 0.5ms)
+Completed 200 OK in 45ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-26 10:08:57 +0200
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-11-26 10:09:13 +0200
+Processing by FeedController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering feed/show.html.erb within layouts/application
+  Rendered feed/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | GC: 0.7ms)
+Completed 200 OK in 51ms (Views: 9.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/assets/application-5181df11.css" for 127.0.0.1 at 2024-11-26 10:09:13 +0200
+Started GET "/assets/application-0405dba2.js" for 127.0.0.1 at 2024-11-26 10:09:13 +0200
+Started GET "/" for 127.0.0.1 at 2024-11-26 10:09:25 +0200
+Processing by FeedController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering feed/show.html.erb within layouts/application
+  Rendered feed/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.0ms)
+Completed 200 OK in 33ms (Views: 7.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-26 10:23:32 +0200
+Processing by FeedController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering feed/show.html.erb within layouts/application
+  Rendered feed/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.4ms)
+Completed 200 OK in 23ms (Views: 3.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-26 11:59:41 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+Processing by FeedController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering feed/show.html.erb within layouts/application
+  Rendered feed/show.html.erb within layouts/application (Duration: 0.6ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | GC: 9.0ms)
+Completed 200 OK in 73ms (Views: 22.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 15.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-26 12:03:04 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+Processing by FeedController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering feed/show.html.erb within layouts/application
+  Rendered feed/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | GC: 0.3ms)
+Completed 200 OK in 57ms (Views: 11.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 12:03:10 +0200
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+SyntaxError (/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/models/user.rb:5: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+  validates :name, presence :true
+                            ^
+/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/models/user.rb:7: syntax error, unexpected constant, expecting `do' or '{' or '('
+    format: {with URI::MailTo::EMAIL_REGEXP},
+                  ^~~
+/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    presence :true,
+             ^
+):
+  
+app/models/user.rb:5: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:7: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 12:05:46 +0200
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+SyntaxError (/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/models/user.rb:7: syntax error, unexpected constant, expecting `do' or '{' or '('
+    format: {with URI::MailTo::EMAIL_REGEXP},
+                  ^~~
+/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    presence :true,
+             ^
+):
+  
+app/models/user.rb:7: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 12:07:16 +0200
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+SyntaxError (/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/models/user.rb:7: syntax error, unexpected constant, expecting `do' or '{' or '('
+            format: { with URI::MailTo::EMAIL_REGEXP },
+                           ^~~
+):
+  
+app/models/user.rb:7: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 12:07:32 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 50.8ms (0 queries, 0 cached) | GC: 2.4ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% content_for :title, t(".title") %>
+
+<layout-columns class="columns is-centered">
+  <layout-column class="column box is-5 mt-6 p-5 m-4">
+    <h1 class="title has-text-centered">
+      <%= t(".title")%>
+    </h1>
+    <%= form_with (model: @user, url:sign_up_path, class:"is-flex is-flex-direction-column" do |form|%>
+      <div class="block">
+        <%= form.label :name, class: "label" %>
+        <%= form.text_field :name, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :email, class: "label" %>
+        <%= form.email_field :email, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :password, class: "label" %>
+        <%= form.password_field :password, class: "input" %>
+      </div>
+      
+      <%= form.submit t(".sign_up"), class:"button is-primary is-large is-align-self-flex-end mb-3 mt-3" %>
+    
+    <% end %>
+  </layout-column>
+</layout-columns>
+
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:8: syntax error, unexpected label
+...ffer.append=  form_with (model: @user, url:sign_up_path, cla...
+...                         ^~~~~~
+/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:26: syntax error, unexpected `end', expecting ')'
+'.freeze;     end 
+              ^~~
+/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:31: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% content_for :title, t(".title") %>
+
+<layout-columns class="columns is-centered">
+  <layout-column class="column box is-5 mt-6 p-5 m-4">
+    <h1 class="title has-text-centered">
+      <%= t(".title")%>
+    </h1>
+    <%= form_with (model: @user, url:sign_up_path, class:"is-flex is-flex-direction-column" do |form|%>
+      <div class="block">
+        <%= form.label :name, class: "label" %>
+        <%= form.text_field :name, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :email, class: "label" %>
+        <%= form.email_field :email, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :password, class: "label" %>
+        <%= form.password_field :password, class: "input" %>
+      </div>
+      
+      <%= form.submit t(".sign_up"), class:"button is-primary is-large is-align-self-flex-end mb-3 mt-3" %>
+    
+    <% end %>
+  </layout-column>
+</layout-columns>
+
+):
+1:    <% content_for :title, t(".title") %>
+2:    
+3:    <layout-columns class="columns is-centered">
+4:      <layout-column class="column box is-5 mt-6 p-5 m-4">
+5:        <h1 class="title has-text-centered">
+6:          <%= t(".title")%>
+7:        </h1>
+8:        <%= form_with (model: @user, url:sign_up_path, class:"is-flex is-flex-direction-column" do |form|%>
+9:          <div class="block">
+10:            <%= form.label :name, class: "label" %>
+11:            <%= form.text_field :name, class: "input" %>
+12:          </div>
+13:          
+14:          <div class="block">
+15:            <%= form.label :email, class: "label" %>
+16:            <%= form.email_field :email, class: "input" %>
+17:          </div>
+18:          
+19:          <div class="block">
+20:            <%= form.label :password, class: "label" %>
+21:            <%= form.password_field :password, class: "input" %>
+22:          </div>
+23:          
+24:          <%= form.submit t(".sign_up"), class:"button is-primary is-large is-align-self-flex-end mb-3 mt-3" %>
+25:        
+26:        <% end %>
+27:      </layout-column>
+28:    </layout-columns>
+  
+app/views/users/new.html.erb:8: syntax error, unexpected label
+app/views/users/new.html.erb:26: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:31: syntax error, unexpected `end', expecting ')'
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:8: syntax error, unexpected label
+...ffer.append=  form_with (model: @user, url:sign_up_path, cla...
+...                         ^~~~~~
+/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:26: syntax error, unexpected `end', expecting ')'
+'.freeze;     end 
+              ^~~
+/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:31: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/users/new.html.erb:8: syntax error, unexpected label
+app/views/users/new.html.erb:26: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:31: syntax error, unexpected `end', expecting ')'
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 12:08:13 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 5.9ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% content_for :title, t(".title") %>
+
+<layout-columns class="columns is-centered">
+  <layout-column class="column box is-5 mt-6 p-5 m-4">
+    <h1 class="title has-text-centered">
+      <%= t(".title")%>
+    </h1>
+    <%= form_with (model: @user, url:sign_up_path, class:"is-flex is-flex-direction-column") do |form| %>
+      <div class="block">
+        <%= form.label :name, class: "label" %>
+        <%= form.text_field :name, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :email, class: "label" %>
+        <%= form.email_field :email, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :password, class: "label" %>
+        <%= form.password_field :password, class: "input" %>
+      </div>
+      
+      <%= form.submit t(".sign_up"), class:"button is-primary is-large is-align-self-flex-end mb-3 mt-3" %>
+    
+    <% end %>
+  </layout-column>
+</layout-columns>
+
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:8: syntax error, unexpected label
+...ffer.append=  form_with (model: @user, url:sign_up_path, cla...
+...                         ^~~~~~
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% content_for :title, t(".title") %>
+
+<layout-columns class="columns is-centered">
+  <layout-column class="column box is-5 mt-6 p-5 m-4">
+    <h1 class="title has-text-centered">
+      <%= t(".title")%>
+    </h1>
+    <%= form_with (model: @user, url:sign_up_path, class:"is-flex is-flex-direction-column") do |form| %>
+      <div class="block">
+        <%= form.label :name, class: "label" %>
+        <%= form.text_field :name, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :email, class: "label" %>
+        <%= form.email_field :email, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :password, class: "label" %>
+        <%= form.password_field :password, class: "input" %>
+      </div>
+      
+      <%= form.submit t(".sign_up"), class:"button is-primary is-large is-align-self-flex-end mb-3 mt-3" %>
+    
+    <% end %>
+  </layout-column>
+</layout-columns>
+
+):
+1:    <% content_for :title, t(".title") %>
+2:    
+3:    <layout-columns class="columns is-centered">
+4:      <layout-column class="column box is-5 mt-6 p-5 m-4">
+5:        <h1 class="title has-text-centered">
+6:          <%= t(".title")%>
+7:        </h1>
+8:        <%= form_with (model: @user, url:sign_up_path, class:"is-flex is-flex-direction-column") do |form| %>
+9:          <div class="block">
+10:            <%= form.label :name, class: "label" %>
+11:            <%= form.text_field :name, class: "input" %>
+12:          </div>
+13:          
+14:          <div class="block">
+15:            <%= form.label :email, class: "label" %>
+16:            <%= form.email_field :email, class: "input" %>
+17:          </div>
+18:          
+19:          <div class="block">
+20:            <%= form.label :password, class: "label" %>
+21:            <%= form.password_field :password, class: "input" %>
+22:          </div>
+23:          
+24:          <%= form.submit t(".sign_up"), class:"button is-primary is-large is-align-self-flex-end mb-3 mt-3" %>
+25:        
+26:        <% end %>
+27:      </layout-column>
+28:    </layout-columns>
+  
+app/views/users/new.html.erb:8: syntax error, unexpected label
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:8: syntax error, unexpected label
+...ffer.append=  form_with (model: @user, url:sign_up_path, cla...
+...                         ^~~~~~
+):
+  
+app/views/users/new.html.erb:8: syntax error, unexpected label
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 12:09:26 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% content_for :title, t(".title") %>
+
+<layout-columns class="columns is-centered">
+  <layout-column class="column box is-5 mt-6 p-5 m-4">
+    <h1 class="title has-text-centered">
+      <%= t(".title")%>
+    </h1>
+    <%= form_with (model: @user, url:sign_up_path, class:"is-flex is-flex-direction-column") do |form| %>
+      <div class="block">
+        <%= form.label :name, class: "label" %>
+        <%= form.text_field :name, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :email, class: "label" %>
+        <%= form.email_field :email, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :password, class: "label" %>
+        <%= form.password_field :password, class: "input" %>
+      </div>
+      
+      <%= form.submit t(".sign_up"), class:"button is-primary is-large is-align-self-flex-end mb-3 mt-3" %>
+    
+    <% end %>
+  </layout-column>
+</layout-columns>
+
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:8: syntax error, unexpected label
+...ffer.append=  form_with (model: @user, url:sign_up_path, cla...
+...                         ^~~~~~
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% content_for :title, t(".title") %>
+
+<layout-columns class="columns is-centered">
+  <layout-column class="column box is-5 mt-6 p-5 m-4">
+    <h1 class="title has-text-centered">
+      <%= t(".title")%>
+    </h1>
+    <%= form_with (model: @user, url:sign_up_path, class:"is-flex is-flex-direction-column") do |form| %>
+      <div class="block">
+        <%= form.label :name, class: "label" %>
+        <%= form.text_field :name, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :email, class: "label" %>
+        <%= form.email_field :email, class: "input" %>
+      </div>
+      
+      <div class="block">
+        <%= form.label :password, class: "label" %>
+        <%= form.password_field :password, class: "input" %>
+      </div>
+      
+      <%= form.submit t(".sign_up"), class:"button is-primary is-large is-align-self-flex-end mb-3 mt-3" %>
+    
+    <% end %>
+  </layout-column>
+</layout-columns>
+
+):
+1:    <% content_for :title, t(".title") %>
+2:    
+3:    <layout-columns class="columns is-centered">
+4:      <layout-column class="column box is-5 mt-6 p-5 m-4">
+5:        <h1 class="title has-text-centered">
+6:          <%= t(".title")%>
+7:        </h1>
+8:        <%= form_with (model: @user, url:sign_up_path, class:"is-flex is-flex-direction-column") do |form| %>
+9:          <div class="block">
+10:            <%= form.label :name, class: "label" %>
+11:            <%= form.text_field :name, class: "input" %>
+12:          </div>
+13:          
+14:          <div class="block">
+15:            <%= form.label :email, class: "label" %>
+16:            <%= form.email_field :email, class: "input" %>
+17:          </div>
+18:          
+19:          <div class="block">
+20:            <%= form.label :password, class: "label" %>
+21:            <%= form.password_field :password, class: "input" %>
+22:          </div>
+23:          
+24:          <%= form.submit t(".sign_up"), class:"button is-primary is-large is-align-self-flex-end mb-3 mt-3" %>
+25:        
+26:        <% end %>
+27:      </layout-column>
+28:    </layout-columns>
+  
+app/views/users/new.html.erb:8: syntax error, unexpected label
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/wernerpetrick/Desktop/Learning/Rails/block_bazaar/app/views/users/new.html.erb:8: syntax error, unexpected label
+...ffer.append=  form_with (model: @user, url:sign_up_path, cla...
+...                         ^~~~~~
+):
+  
+app/views/users/new.html.erb:8: syntax error, unexpected label
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 12:10:30 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 7.4ms | ActiveRecord: 4.6ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/sign_up" for 127.0.0.1 at 2024-11-26 12:11:50 +0200
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Werner", "email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Sign up!"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (3.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('werpet@gmail.com') LIMIT 1 /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ('Werner', 'werpet@gmail.com', '$2a$12$icHxnrQ0cHXXgbxZGu974ucgzvkCtuU.tL2ru9sVO9hmS10eSXwb6', '2024-11-26 10:11:51.241772', '2024-11-26 10:11:51.241772') RETURNING "id" /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('werpet@gmail.com') AND "users"."id" != 1 LIMIT 1 /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mOrganization Create (1.5ms)[0m  [1m[32mINSERT INTO "organizations" ("created_at", "updated_at") VALUES ('2024-11-26 10:11:51.298962', '2024-11-26 10:11:51.298962') RETURNING "id" /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mMembership Create (3.5ms)[0m  [1m[32mINSERT INTO "memberships" ("user_id", "organization_id", "created_at", "updated_at") VALUES (1, 1, '2024-11-26 10:11:51.301566', '2024-11-26 10:11:51.301566') RETURNING "id" /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 385ms (ActiveRecord: 28.1ms (5 queries, 0 cached) | GC: 10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-26 12:11:51 +0200
+Processing by FeedController#show as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering feed/show.html.erb within layouts/application
+  Rendered feed/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 12:15:49 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | GC: 0.5ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.5ms)
+Completed 200 OK in 40ms (Views: 4.5ms | ActiveRecord: 7.9ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 12:15:53 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-26 12:15:59 +0200
+Processing by FeedController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering feed/show.html.erb within layouts/application
+  Rendered feed/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 42ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-11-26 13:04:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+Processing by FeedController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering feed/show.html.erb within layouts/application
+  Rendered feed/show.html.erb within layouts/application (Duration: 0.3ms | GC: 0.2ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | GC: 15.6ms)
+Completed 200 OK in 74ms (Views: 28.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 16.2ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 13:04:15 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.activerecord.attributes.user.name => nil
+[i18n-debug] en.attributes.name => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.activerecord.attributes.user.email => nil
+[i18n-debug] en.attributes.email => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.users.new.sign_up => "Sign up!"
+  Rendered users/new.html.erb within layouts/application (Duration: 4.4ms | GC: 0.0ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | GC: 0.0ms)
+Completed 200 OK in 78ms (Views: 5.6ms | ActiveRecord: 21.0ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/sign_up" for 127.0.0.1 at 2024-11-26 13:16:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.activerecord.attributes.user.name => nil
+[i18n-debug] en.attributes.name => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.activerecord.attributes.user.email => nil
+[i18n-debug] en.attributes.email => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.users.new.sign_up => "Sign up!"
+  Rendered users/new.html.erb within layouts/application (Duration: 8.2ms | GC: 0.0ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | GC: 0.0ms)
+Completed 200 OK in 120ms (Views: 16.2ms | ActiveRecord: 32.4ms (0 queries, 0 cached) | GC: 6.2ms)
+
+
+Started POST "/sign_up" for 127.0.0.1 at 2024-11-26 13:16:08 +0200
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Werner", "email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Sign up!"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('werns@mymail.com') LIMIT 1 /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.activerecord.attributes.user.name => nil
+[i18n-debug] en.attributes.name => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.activerecord.attributes.user.email => nil
+[i18n-debug] en.attributes.email => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.models.user => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.blank => nil
+[i18n-debug] en.activerecord.errors.models.user.blank => nil
+[i18n-debug] en.activerecord.errors.messages.blank => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.blank => nil
+[i18n-debug] en.activerecord.errors.models.user.blank => nil
+[i18n-debug] en.activerecord.errors.messages.blank => nil
+[i18n-debug] en.errors.attributes.password.blank => nil
+[i18n-debug] en.errors.messages.blank => "can't be blank"
+[i18n-debug] en.activerecord.models.user => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.too_short => "must be at least 8 characters long"
+[i18n-debug] en.activerecord.models.user => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.blank => nil
+[i18n-debug] en.activerecord.errors.models.user.blank => nil
+[i18n-debug] en.activerecord.errors.messages.blank => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.blank => nil
+[i18n-debug] en.activerecord.errors.models.user.blank => nil
+[i18n-debug] en.activerecord.errors.messages.blank => nil
+[i18n-debug] en.errors.attributes.password.blank => nil
+[i18n-debug] en.errors.messages.blank => "can't be blank"
+[i18n-debug] en.activerecord.models.user => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.too_short => "must be at least 8 characters long"
+[i18n-debug] en.activerecord.models.user => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.blank => nil
+[i18n-debug] en.activerecord.errors.models.user.blank => nil
+[i18n-debug] en.activerecord.errors.messages.blank => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.blank => nil
+[i18n-debug] en.activerecord.errors.models.user.blank => nil
+[i18n-debug] en.activerecord.errors.messages.blank => nil
+[i18n-debug] en.errors.attributes.password.blank => nil
+[i18n-debug] en.errors.messages.blank => "can't be blank"
+[i18n-debug] en.activerecord.models.user => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.too_short => "must be at least 8 characters long"
+[i18n-debug] en.support.array => {:words_connector=>", ", :two_words_connector=>" and ", :last_word_connector=>", and "}
+[i18n-debug] en.users.new.sign_up => "Sign up!"
+  Rendered users/new.html.erb within layouts/application (Duration: 7.3ms | GC: 0.0ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 48ms (Views: 8.2ms | ActiveRecord: 5.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/sign_up" for 127.0.0.1 at 2024-11-26 13:16:15 +0200
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Werner", "email"=>"[FILTERED]", "password"=>"[FILTERED]"}, "commit"=>"Sign up!"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('werns@mymail.com') LIMIT 1 /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*action='create',application='BlockBazaar',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.activerecord.attributes.user.name => nil
+[i18n-debug] en.attributes.name => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.activerecord.attributes.user.email => nil
+[i18n-debug] en.attributes.email => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.models.user => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.too_short => "must be at least 8 characters long"
+[i18n-debug] en.activerecord.models.user => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.too_short => "must be at least 8 characters long"
+[i18n-debug] en.activerecord.models.user => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.activerecord.errors.models.user.attributes.password.too_short => "must be at least 8 characters long"
+[i18n-debug] en.support.array => {:words_connector=>", ", :two_words_connector=>" and ", :last_word_connector=>", and "}
+[i18n-debug] en.users.new.sign_up => "Sign up!"
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 422 Unprocessable Content in 309ms (Views: 1.8ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2024-12-02 13:27:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='BlockBazaar'*/[0m
+Processing by FeedController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering feed/show.html.erb within layouts/application
+  Rendered feed/show.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | GC: 16.4ms)
+Completed 200 OK in 78ms (Views: 29.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 17.2ms)
+
+
+Started GET "/assets/application-5181df11.css" for 127.0.0.1 at 2024-12-02 13:27:29 +0200
+Started GET "/assets/application-0405dba2.js" for 127.0.0.1 at 2024-12-02 13:27:29 +0200
+Started GET "/sign_up" for 127.0.0.1 at 2024-12-02 13:27:38 +0200
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.users.new.title => "Sign up to Block Bazaar"
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.helpers.label.user.name => nil
+[i18n-debug] en.activerecord.attributes.user.name => nil
+[i18n-debug] en.attributes.name => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.helpers.label.user.email => nil
+[i18n-debug] en.activerecord.attributes.user.email => nil
+[i18n-debug] en.attributes.email => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.helpers.label.user.password => nil
+[i18n-debug] en.activerecord.attributes.user.password => nil
+[i18n-debug] en.attributes.password => nil
+[i18n-debug] en.users.new.sign_up => "Sign up!"
+  Rendered users/new.html.erb within layouts/application (Duration: 4.3ms | GC: 0.0ms)
+  Rendered shared/_flashes.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.0ms)
+Completed 200 OK in 86ms (Views: 5.6ms | ActiveRecord: 36.9ms (0 queries, 0 cached) | GC: 1.0ms)
+
+
